@@ -39,7 +39,7 @@ export function NewsBlogListing() {
 
         {/* Featured */}
         {cat === 'All' && featured && (
-          <Link href={`/marketing/news/${featured.slug}`}>
+          <Link href={`/news/${featured.slug}`}>
             <article className="nbl-featured">
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, alignItems: 'center', marginBottom: 12 }}>
                 <span style={{ background: '#b8954a', color: '#fff', fontFamily: 'var(--mono)', fontSize: 9, letterSpacing: '0.16em', textTransform: 'uppercase', padding: '3px 10px' }}>
@@ -76,7 +76,7 @@ export function NewsBlogListing() {
         ) : (
           <div className="nbl-grid">
             {filtered.map(item => (
-              <Link key={item.id} href={`/marketing/news/${item.slug}`}>
+              <Link key={item.id} href={`/news/${item.slug}`}>
                 <article className="nbl-card">
                   <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 12 }}>
                     <Badge cat={item.category}/>

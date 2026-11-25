@@ -20,7 +20,7 @@ export function NewsroomFR() {
         </div>
         <div className="nr-g">
           {liste.map((a) => (
-            <Link key={a.slug} href={a.lien || `/marketing/newsroom/${a.slug}`} className="nr-c">
+            <Link key={a.slug} href={a.lien || `/newsroom/${a.slug}`} className="nr-c">
               <div className="nr-i" style={{ backgroundImage: `url(/assets/images/${a.image})` }} />
               <span>{a.tag} • {a.date}{a.duree ? ` • ${a.duree}` : ''}{a.source ? ` • ${a.source}` : ''}</span>
               <h2>{a.titre}</h2>

@@ -8,9 +8,9 @@ import { articles } from '@/lib/data/articles';
 import { LazyVideo } from './LazyVideo';
 
 const approche = [
-  ['Technologie', 'Radar, optique, thermique et IA réunis dans une même chaîne.', 'circuit-orange.jpg', '/marketing/technology'],
-  ['Plateforme', 'Une seule plateforme pour observer, comprendre et agir.', 'circuit-bleu.jpg', '/marketing/platform'],
-  ['Sécurité et conformité', 'Souveraineté des données et conformité au droit européen.', 'laboratoire.jpg', '/marketing/security'],
+  ['Technologie', 'Radar, optique, thermique et IA réunis dans une même chaîne.', 'circuit-orange.jpg', '/technology'],
+  ['Plateforme', 'Une seule plateforme pour observer, comprendre et agir.', 'circuit-bleu.jpg', '/platform'],
+  ['Sécurité et conformité', 'Souveraineté des données et conformité au droit européen.', 'laboratoire.jpg', '/security'],
 ];
 const valeurs = [
   ['Rigueur', 'Nous publions ce que nous savons vérifier et nous disons quand notre confiance est limitée.'],
@@ -35,14 +35,14 @@ export function AboutFR() {
       <section className="ab-in">
         <h2>Qui sommes-nous</h2>
         <p>Fractalysium réunit observation satellitaire, intelligence artificielle et science géospatiale. Nous aidons les institutions européennes, la sécurité civile et les opérateurs d'infrastructures critiques à détecter les changements et à réagir plus vite, partout sur Terre.</p>
-        <Link href="/marketing/defense" className="ab-l">Découvrir notre offre défense et renseignement</Link>
+        <Link href="/defense" className="ab-l">Découvrir notre offre défense et renseignement</Link>
       </section>
 
       <section className="ab-pair">
-        <Link href="/marketing/defense" className="ab-c" style={{ backgroundImage: 'url(/assets/images/station-sol.jpg)' }}>
+        <Link href="/defense" className="ab-c" style={{ backgroundImage: 'url(/assets/images/station-sol.jpg)' }}>
           <h3>Défense et renseignement</h3><p>Missions souveraines, accès aux données, cas d'usage détaillés.</p><span>Voir l'offre</span>
         </Link>
-        <Link href="/marketing/capabilities" className="ab-c" style={{ backgroundImage: 'url(/assets/images/earth-surface.jpg)' }}>
+        <Link href="/capabilities" className="ab-c" style={{ backgroundImage: 'url(/assets/images/earth-surface.jpg)' }}>
           <h3>Observation de la Terre</h3><p>Incendies, maritime, agriculture, catastrophes, zones urbaines.</p><span>Voir les capacités</span>
         </Link>
       </section>
@@ -50,7 +50,7 @@ export function AboutFR() {
       <section className="ab-band" style={{ backgroundImage: 'url(/assets/images/radome.jpg)' }}>
         <div><h2>Notre mission</h2>
         <p>Rendre l'observation de la Terre utile, vérifiable et souveraine. Chaque résultat indique ses sources et son niveau de confiance, pour que les décideurs gardent la maîtrise.</p>
-        <Link href="/marketing/platform" className="ab-l ab-l--w">Découvrir la plateforme</Link></div>
+        <Link href="/platform" className="ab-l ab-l--w">Découvrir la plateforme</Link></div>
       </section>
 
       <section className="ab-s">
@@ -68,7 +68,7 @@ export function AboutFR() {
         <LazyVideo src="/assets/videos/fabrication.mp4" poster="/assets/images/technicien.jpg" />
         <div><h2>Ingénierie et science</h2>
         <p>Des spécialistes de l'observation de la Terre, de l'IA et du logiciel travaillent ensemble, du capteur à la décision, avec une même exigence de rigueur.</p>
-        <Link href="/marketing/careers" className="ab-l">Rejoindre l'équipe</Link></div>
+        <Link href="/careers" className="ab-l">Rejoindre l'équipe</Link></div>
       </section>
 
       <section className="ab-s">
@@ -96,10 +96,10 @@ export function AboutFR() {
       </section>
 
       <section className="ab-s">
-        <div className="ab-hd"><h2>Actualités récentes</h2><Link href="/marketing/news" className="ab-l">Toutes les actualités</Link></div>
+        <div className="ab-hd"><h2>Actualités récentes</h2><Link href="/news" className="ab-l">Toutes les actualités</Link></div>
         <div className="ab-news">
           {articles.slice(0, 3).map((a) => (
-            <Link key={a.slug} href={`/marketing/news/${a.slug}`}>
+            <Link key={a.slug} href={`/news/${a.slug}`}>
               <div className="ab-ni" style={{ backgroundImage: `url(/assets/images/${a.image})` }} />
               <span>{a.categorie} • {a.date}</span><h3>{a.titre}</h3>
             </Link>
@@ -111,7 +111,7 @@ export function AboutFR() {
         <LazyVideo src="/assets/videos/intervention.mp4" poster="/assets/images/technicien.jpg" />
         <div><h2>Rendre l'impossible possible.</h2>
         <p>Vous prenez vos responsabilités tôt et vous résolvez des problèmes difficiles avec des experts qui se soucient de l'impact.</p>
-        <Link href="/marketing/careers" className="ab-btn">Voir les carrières</Link></div>
+        <Link href="/careers" className="ab-btn">Voir les carrières</Link></div>
       </section>
 
       <CTASection />

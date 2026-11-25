@@ -39,8 +39,8 @@ export function HeroSection() {
             Fondé sur les données ouvertes Copernicus. Soumis au droit de l'UE.
           </p>
           <div className="hero-btns">
-            <Link href="/marketing/contact" className="btn btn-dark">Demander l'accès</Link>
-            <Link href="/marketing/capabilities" className="btn btn-outline">Nos capacités</Link>
+            <Link href="/contact" className="btn btn-dark">Demander l'accès</Link>
+            <Link href="/capabilities" className="btn btn-outline">Nos capacités</Link>
           </div>
         </div>
       </section>

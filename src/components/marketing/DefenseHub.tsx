@@ -15,7 +15,7 @@ export function DefenseHub() {
         <div>
           <h1>Des décisions plus rapides pour un avenir plus sûr.</h1>
           <p>Une observation continue, par tous les temps, pour les organisations de défense, de renseignement et de sécurité. De l'accès à la demande jusqu'aux systèmes entièrement souverains.</p>
-          <Link href="/marketing/contact" className="dh-b">Parler à un expert</Link>
+          <Link href="/contact" className="dh-b">Parler à un expert</Link>
         </div>
       </header>
 
@@ -28,7 +28,7 @@ export function DefenseHub() {
           <div className="dh-top"><h2>{groupes[g].titre}</h2><p>{groupes[g].texte}</p></div>
           <div className={`dh-grid dh-grid--${g}`}>
             {sujets.filter((s) => s.groupe === g).map((s) => (
-              <Link key={s.slug} href={`/marketing/defense/${s.slug}`} className="dh-c" style={{ backgroundImage: `url(/assets/images/${s.image})` }}>
+              <Link key={s.slug} href={`/defense/${s.slug}`} className="dh-c" style={{ backgroundImage: `url(/assets/images/${s.image})` }}>
                 <h3>{s.titre}</h3><p>{s.accroche}</p><span>En savoir plus</span>
               </Link>
             ))}

@@ -7,19 +7,19 @@ import { articles } from '@/lib/data/articles';
 const domaines = [
   { t: 'Incendies', d: 'Détection de départs de feu en moins de 60 secondes grâce aux données thermiques.', img: 'earth-surface-2.jpg',
     texte: 'Les mesures thermiques des satellites permettent de repérer un foyer peu après son apparition. Chaque signal est comparé à la normale locale pour limiter les fausses alertes, puis transmis à la sécurité civile avec sa position et un niveau de confiance.',
-    points: ['Détection thermique fréquente', 'Comparaison à la normale locale', 'Niveau de confiance affiché', 'Alerte vers la sécurité civile'], lien: '/marketing/defense/detection-des-incendies' },
+    points: ['Détection thermique fréquente', 'Comparaison à la normale locale', 'Niveau de confiance affiché', 'Alerte vers la sécurité civile'], lien: '/defense/detection-des-incendies' },
   { t: 'Maritime', d: 'Repérage des navires non déclarés par radar spatial, de jour comme de nuit.', img: 'satellite-orbit.jpg',
     texte: 'Le radar spatial observe de nuit et sous les nuages. Ses détections sont croisées avec les signaux de navigation déclarés pour repérer les navires qui ne se signalent pas et suivre l\'activité dans les zones maritimes européennes.',
-    points: ['Radar, jour et nuit', 'Croisement avec les signaux déclarés', 'Suivi de zones maritimes', 'Réduction des faux positifs'], lien: '/marketing/defense/surveillance-maritime' },
+    points: ['Radar, jour et nuit', 'Croisement avec les signaux déclarés', 'Suivi de zones maritimes', 'Réduction des faux positifs'], lien: '/defense/surveillance-maritime' },
   { t: 'Agriculture', d: 'Prévision des récoltes plusieurs semaines à l\'avance.', img: 'earth-surface.jpg',
     texte: 'L\'imagerie optique mesure la vigueur des cultures, le radar renseigne sur leur structure et l\'humidité du sol. En fusionnant les deux, on obtient une série continue pour chaque parcelle, même quand les nuages bloquent l\'optique, et une estimation de rendement avec sa marge d\'incertitude.',
-    points: ['Fusion radar et optique', 'Série temporelle sans interruption', 'Comparaison aux campagnes passées', 'Estimation avec fourchette'], lien: '/marketing/capabilities' },
+    points: ['Fusion radar et optique', 'Série temporelle sans interruption', 'Comparaison aux campagnes passées', 'Estimation avec fourchette'], lien: '/capabilities' },
   { t: 'Infrastructures', d: 'Surveillance des sites critiques et des zones urbaines.', img: 'city-aerial.jpg',
     texte: 'Comparer des observations successives permet de repérer ce qui change autour d\'une installation ou dans une ville : constructions, terrassements, circulation. Chaque détection est replacée dans l\'historique du site pour distinguer un événement notable d\'une variation normale.',
-    points: ['Comparaison dans le temps', 'Historique de plusieurs années', 'Distinction normal / inhabituel', 'Rapports exportables'], lien: '/marketing/defense/activite-des-sites' },
+    points: ['Comparaison dans le temps', 'Historique de plusieurs années', 'Distinction normal / inhabituel', 'Rapports exportables'], lien: '/defense/activite-des-sites' },
 ];
 
-const actus = articles.slice(0, 6).map((a) => ({ cat: a.categorie, t: a.titre, d: a.date, r: a.lecture, href: `/marketing/news/${a.slug}` }));
+const actus = articles.slice(0, 6).map((a) => ({ cat: a.categorie, t: a.titre, d: a.date, r: a.lecture, href: `/news/${a.slug}` }));
 
 export function HomeFR() {
   const [sel, setSel] = useState(0);
@@ -29,15 +29,15 @@ export function HomeFR() {
       <section className="h-intro">
         <h2>Renseignement souverain.<br />Depuis l'espace.</h2>
         <p>Fractalysium réunit observation satellitaire, intelligence artificielle et science géospatiale pour aider les institutions européennes à détecter les changements et à réagir, partout sur Terre.</p>
-        <Link href="/marketing/about" className="h-link">À propos de nous</Link>
+        <Link href="/about" className="h-link">À propos de nous</Link>
       </section>
 
       <section className="h-pair">
-        <Link href="/marketing/defense" className="h-card h-card--big" style={{ backgroundImage: 'url(/assets/images/station-sol.jpg)' }}>
+        <Link href="/defense" className="h-card h-card--big" style={{ backgroundImage: 'url(/assets/images/station-sol.jpg)' }}>
           <h3>Défense et renseignement</h3>
           <p>Une surveillance continue, par tous les temps, pour les organisations de défense et de sécurité.</p>
         </Link>
-        <Link href="/marketing/technology" className="h-card h-card--big" style={{ backgroundImage: 'url(/assets/images/radome.jpg)' }}>
+        <Link href="/technology" className="h-card h-card--big" style={{ backgroundImage: 'url(/assets/images/radome.jpg)' }}>
           <h3>Technologie et ingénierie</h3>
           <p>Des systèmes conçus en Europe, du capteur à la décision, avec la science au cœur.</p>
         </Link>
@@ -65,12 +65,12 @@ export function HomeFR() {
         <div>
           <h2>Des données ouvertes.<br />Un cadre européen.</h2>
           <p>Chaque analyse s'appuie sur Copernicus, fourni librement par le droit européen. Aucune dépendance propriétaire, aucune exposition à une juridiction étrangère.</p>
-          <Link href="/marketing/platform" className="h-link h-link--light">Découvrir la plateforme</Link>
+          <Link href="/platform" className="h-link h-link--light">Découvrir la plateforme</Link>
         </div>
       </section>
 
       <section className="h-sec">
-        <div className="h-head"><h2>Dernières actualités</h2><Link href="/marketing/newsroom" className="h-link">Toutes les actualités</Link></div>
+        <div className="h-head"><h2>Dernières actualités</h2><Link href="/newsroom" className="h-link">Toutes les actualités</Link></div>
         <div className="h-news">
           {actus.map((a) => (
             <Link key={a.t} href={a.href} className="h-n">

@@ -10,7 +10,7 @@ export function CTASection() {
           <h2>Contactez-nous</h2>
           <p>Échangez avec nos experts pour découvrir ce que des données d'observation fiables peuvent apporter à votre organisation.</p>
         </div>
-        <Link href="/marketing/contact" className="cta2__b">Prenons contact</Link>
+        <Link href="/contact" className="cta2__b">Prenons contact</Link>
       </section>
       <style dangerouslySetInnerHTML={{ __html: `
         .cta2{display:flex;flex-direction:column;gap:24px;padding:72px 20px;background:#f3f4f6}
@@ -25,9 +25,9 @@ export function CTASection() {
 }
 
 const cols = [
-  { h: 'Entreprise', l: [['À propos', '/marketing/about'], ['Carrières', '/marketing/careers'], ['Actualités', '/marketing/newsroom'], ['Recherche', '/marketing/news'], ['Contact', '/marketing/contact']] },
-  { h: 'Offre', l: [['Défense et renseignement', '/marketing/defense'], ['Capacités', '/marketing/capabilities'], ['Technologie', '/marketing/technology'], ['Plateforme', '/marketing/platform'], ['Sécurité', '/marketing/security']] },
-  { h: 'Partenaires', l: [['Programmes et partenaires', '/#programmes'], ['Copernicus', '/marketing/platform']] },
+  { h: 'Entreprise', l: [['À propos', '/about'], ['Carrières', '/careers'], ['Actualités', '/newsroom'], ['Recherche', '/news'], ['Contact', '/contact']] },
+  { h: 'Offre', l: [['Défense et renseignement', '/defense'], ['Capacités', '/capabilities'], ['Technologie', '/technology'], ['Plateforme', '/platform'], ['Sécurité', '/security']] },
+  { h: 'Partenaires', l: [['Programmes et partenaires', '/#programmes'], ['Copernicus', '/platform']] },
   // Colonne « Réseaux » masquée tant que les comptes ne sont pas publics.
   // { h: 'Réseaux', l: [['LinkedIn', '#'], ['X', '#'], ['YouTube', '#'], ['Instagram', '#']] },
 ];
@@ -50,10 +50,10 @@ export function Footer() {
         <div className="ft__bot">
           <span>© 2026 Fractalysium. Tous droits réservés.</span>
           <span className="ft__legal">
-            <Link href="/marketing/legal/politique-de-confidentialite">Politique de confidentialité</Link>
-            <Link href="/marketing/legal/mentions-legales">Mentions légales</Link>
-            <Link href="/marketing/legal/reglement-europeen-ia">Règlement européen sur l'IA</Link>
-            <Link href="/marketing/legal/cookies">Paramètres des cookies</Link>
+            <Link href="/legal/politique-de-confidentialite">Politique de confidentialité</Link>
+            <Link href="/legal/mentions-legales">Mentions légales</Link>
+            <Link href="/legal/reglement-europeen-ia">Règlement européen sur l'IA</Link>
+            <Link href="/legal/cookies">Paramètres des cookies</Link>
           </span>
           <span className="ft__lang" role="img" aria-label="France" title="France">
             <i className="ft__bar ft__bar--blue"/><i className="ft__bar ft__bar--white"/><i className="ft__bar ft__bar--red"/>

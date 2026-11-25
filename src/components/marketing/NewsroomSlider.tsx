@@ -108,7 +108,7 @@ export function NewsroomSlider() {
               <h2 className="ns-h2">Latest from Fractalysium</h2>
             </div>
             <div className="ns-controls">
-              <Link href="/marketing/newsroom" className="ns-view-all">
+              <Link href="/newsroom" className="ns-view-all">
                 View all →
               </Link>
               <button
@@ -160,7 +160,7 @@ export function NewsroomSlider() {
             {Object.entries(TYPE_LABEL).map(([type, label]) => (
               <Link
                 key={type}
-                href={`/marketing/newsroom?tab=${type}`}
+                href={`/newsroom?tab=${type}`}
                 className="ns-pill"
               >
                 <span className="ns-pill-dot" style={{ background: TYPE_COLOR[type] }}/>

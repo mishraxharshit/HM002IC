@@ -12,13 +12,13 @@ export function RechercheFR() {
       <Navigation />
       <section className="rc">
         <h1>Recherche et blog</h1>
-        <Link href={`/marketing/news/${une.slug}`} className="rc-une" style={{ backgroundImage: `url(/assets/images/${une.image})` }}>
+        <Link href={`/news/${une.slug}`} className="rc-une" style={{ backgroundImage: `url(/assets/images/${une.image})` }}>
           <span>{une.categorie} • {une.date} • {une.lecture} de lecture</span>
           <h2>{une.titre}</h2>
         </Link>
         <div className="rc-g">
           {reste.map((a) => (
-            <Link key={a.slug} href={`/marketing/news/${a.slug}`} className="rc-c">
+            <Link key={a.slug} href={`/news/${a.slug}`} className="rc-c">
               <div className="rc-i" style={{ backgroundImage: `url(/assets/images/${a.image})` }} />
               <span>{a.categorie} • {a.date} • {a.lecture} de lecture</span>
               <h3>{a.titre}</h3><p>{a.resume}</p>

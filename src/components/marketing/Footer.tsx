@@ -11,8 +11,8 @@ export function CTASection() {
         <div className="container-narrow">
           <span className="eyebrow" style={{ textAlign:'center', display:'block' }}>{t(tr.cta.eyebrow)}</span>
           <div className="cta__btns">
-            <Link href="/marketing/contact" className="btn-dark">{t(tr.cta.primary)}</Link>
-            <Link href="/marketing/capabilities" className="link-arrow">{t(tr.cta.secondary)} →</Link>
+            <Link href="/contact" className="btn-dark">{t(tr.cta.primary)}</Link>
+            <Link href="/capabilities" className="link-arrow">{t(tr.cta.secondary)} →</Link>
           </div>
         </div>
       </section>
@@ -54,18 +54,18 @@ export function Footer() {
             <div className="footer__col">
               <h4 className="footer__col-h">Plateforme</h4>
               <ul>
-                <li><Link href="/marketing/capabilities">Capacités</Link></li>
-                <li><Link href="/marketing/technology">Technologie</Link></li>
-                <li><Link href="/marketing/security">Sécurité</Link></li>
-                <li><Link href="/marketing/news">Recherche</Link></li>
+                <li><Link href="/capabilities">Capacités</Link></li>
+                <li><Link href="/technology">Technologie</Link></li>
+                <li><Link href="/security">Sécurité</Link></li>
+                <li><Link href="/news">Recherche</Link></li>
               </ul>
             </div>
             <div className="footer__col">
               <h4 className="footer__col-h">Entreprise</h4>
               <ul>
-                <li><Link href="/marketing/about">À propos</Link></li>
-                <li><Link href="/marketing/about#careers">Carrières</Link></li>
-                <li><Link href="/marketing/contact">Contact</Link></li>
+                <li><Link href="/about">À propos</Link></li>
+                <li><Link href="/about#careers">Carrières</Link></li>
+                <li><Link href="/contact">Contact</Link></li>
               </ul>
             </div>
             <div className="footer__col">
@@ -73,7 +73,7 @@ export function Footer() {
               <ul>
                 <li><Link href="#">{t(tr.footer.privacy)}</Link></li>
                 <li><Link href="#">{t(tr.footer.terms)}</Link></li>
-                <li><Link href="/marketing/security">Règlement européen sur l'IA</Link></li>
+                <li><Link href="/security">Règlement européen sur l'IA</Link></li>
               </ul>
             </div>
           </div>

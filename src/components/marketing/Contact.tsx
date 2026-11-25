@@ -325,7 +325,7 @@ export function ContactForm() {
             <input type="checkbox" {...field('consent')} checked={f.consent} onChange={set('consent')} />
             <span>
               J'accepte que Fractalysium traite ces informations pour répondre à ma demande, conformément à la{' '}
-              <a href="/marketing/legal/politique-de-confidentialite" target="_blank" rel="noopener noreferrer">politique de confidentialité</a>.
+              <a href="/legal/politique-de-confidentialite" target="_blank" rel="noopener noreferrer">politique de confidentialité</a>.
               Je peux exercer mes droits (accès, rectification, effacement) à tout moment. *
             </span>
           </label>

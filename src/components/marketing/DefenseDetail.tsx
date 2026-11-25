@@ -12,7 +12,7 @@ export function DefenseDetail({ s }: { s: Sujet }) {
       <Navigation />
       <header className="dd-h" style={{ backgroundImage: `url(/assets/images/${s.image})` }}>
         <div>
-          <Link href="/marketing/defense" className="dd-back">Défense et renseignement · {groupes[s.groupe].titre}</Link>
+          <Link href="/defense" className="dd-back">Défense et renseignement · {groupes[s.groupe].titre}</Link>
           <h1>{s.titre}</h1><p>{s.accroche}</p>
         </div>
       </header>
@@ -22,8 +22,8 @@ export function DefenseDetail({ s }: { s: Sujet }) {
       </section>
       <section className="dd-o">
         <h2>Dans la même catégorie</h2>
-        <div>{autres.map((x) => <Link key={x.slug} href={`/marketing/defense/${x.slug}`}><h3>{x.titre}</h3><p>{x.accroche}</p></Link>)}</div>
-        <Link href="/marketing/defense" className="dd-all">Voir toute l'offre défense et renseignement</Link>
+        <div>{autres.map((x) => <Link key={x.slug} href={`/defense/${x.slug}`}><h3>{x.titre}</h3><p>{x.accroche}</p></Link>)}</div>
+        <Link href="/defense" className="dd-all">Voir toute l'offre défense et renseignement</Link>
       </section>
       <CTASection />
       <Footer />
