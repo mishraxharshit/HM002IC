@@ -25,7 +25,7 @@ export function NewsArticle({ item }: { item: NewsItem }) {
     <>
       <section className="art-hdr">
         <div className="container-narrow">
-          <Link href="/marketing/news" className="art-back">← All Dispatches</Link>
+          <Link href="/news" className="art-back">← All Dispatches</Link>
           <div style={{ display:'flex', flexWrap:'wrap', gap:10, alignItems:'center', marginBottom:16 }}>
             <span className="art-badge" style={{ borderColor:`${color}33`, background:`${color}0d`, color }}>{item.category}</span>
             <span className="art-date">{item.date} · {item.readTime}</span>
@@ -50,8 +50,8 @@ export function NewsArticle({ item }: { item: NewsItem }) {
             <p style={{ fontSize:13, color:'#6b6b6b', lineHeight:1.65 }}>Fractalysium is a European sovereign satellite intelligence company. Built on Copernicus open data. Governed by EU law.</p>
           </div>
           <div style={{ display:'flex', flexWrap:'wrap', gap:12, marginTop:28 }}>
-            <Link href="/marketing/contact" className="btn btn-dark">Request a Briefing</Link>
-            <Link href="/marketing/news" style={{ display:'flex', alignItems:'center', fontSize:14, color:'#1a1a1a', borderBottom:'1px solid #e8e8e8', paddingBottom:2 }}>All Dispatches →</Link>
+            <Link href="/contact" className="btn btn-dark">Request a Briefing</Link>
+            <Link href="/news" style={{ display:'flex', alignItems:'center', fontSize:14, color:'#1a1a1a', borderBottom:'1px solid #e8e8e8', paddingBottom:2 }}>All Dispatches →</Link>
           </div>
         </div>
       </article>
@@ -61,13 +61,13 @@ export function NewsArticle({ item }: { item: NewsItem }) {
           <div className="container-narrow">
             <div className="art-nav">
               {prev ? (
-                <Link href={`/marketing/news/${prev.slug}`} className="art-nav-item">
+                <Link href={`/news/${prev.slug}`} className="art-nav-item">
                   <span className="art-nav-dir">← Previous</span>
                   <span className="art-nav-title">{prev.title}</span>
                 </Link>
               ) : <div/>}
               {next ? (
-                <Link href={`/marketing/news/${next.slug}`} className="art-nav-item" style={{ textAlign:'right' }}>
+                <Link href={`/news/${next.slug}`} className="art-nav-item" style={{ textAlign:'right' }}>
                   <span className="art-nav-dir">Next →</span>
                   <span className="art-nav-title">{next.title}</span>
                 </Link>

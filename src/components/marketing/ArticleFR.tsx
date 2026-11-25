@@ -20,8 +20,8 @@ export function ArticleFR({ a }: { a: Article }) {
       </article>
       <section className="ar-m">
         <h2>À lire aussi</h2>
-        {autres.map((x) => <Link key={x.slug} href={`/marketing/news/${x.slug}`}><span>{x.categorie} • {x.date}</span><h3>{x.titre}</h3></Link>)}
-        <Link href="/marketing/news" className="ar-all">Tous les articles</Link>
+        {autres.map((x) => <Link key={x.slug} href={`/news/${x.slug}`}><span>{x.categorie} • {x.date}</span><h3>{x.titre}</h3></Link>)}
+        <Link href="/news" className="ar-all">Tous les articles</Link>
       </section>
       <CTASection />
       <Footer />

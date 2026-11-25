@@ -25,11 +25,11 @@ export function LegalPage({ slug, p }: { slug: string; p: PageLegale }) {
         ))}
         {slug === 'cookies' && (<div className="lg-act"><button onClick={effacer}>Effacer ma préférence de langue</button>{msg && <p role="status">{msg}</p>}</div>)}
         <nav className="lg-n" aria-label="Autres pages légales">
-          <Link href="/marketing/legal/politique-de-confidentialite">Politique de confidentialité</Link>
-          <Link href="/marketing/legal/mentions-legales">Mentions légales</Link>
-          <Link href="/marketing/legal/reglement-europeen-ia">Règlement européen sur l'IA</Link>
-          <Link href="/marketing/legal/cookies">Paramètres des cookies</Link>
-          <Link href="/marketing/contact">Nous contacter</Link>
+          <Link href="/legal/politique-de-confidentialite">Politique de confidentialité</Link>
+          <Link href="/legal/mentions-legales">Mentions légales</Link>
+          <Link href="/legal/reglement-europeen-ia">Règlement européen sur l'IA</Link>
+          <Link href="/legal/cookies">Paramètres des cookies</Link>
+          <Link href="/contact">Nous contacter</Link>
         </nav>
       </article>
       <Footer />

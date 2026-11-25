@@ -27,7 +27,7 @@ export const newsroomItems: NewsroomItem[] = [
     summary: 'Our Cognitive Planetary Intelligence platform has completed the conformity assessment process under the EU AI Act, enabling deployment in emergency response and border monitoring contexts across the European Union.',
     date: 'April 2026', tag: 'Company News',
     image: '/assets/images/satellite-orbit.jpg',
-    href: '/marketing/news/cognitive-planetary-intelligence', external: false,
+    href: '/news/cognitive-planetary-intelligence', external: false,
   },
   {
     id: 'n02', type: 'news',
@@ -35,7 +35,7 @@ export const newsroomItems: NewsroomItem[] = [
     summary: 'Our dark vessel detection system has entered operational trial with a European coastal authority, processing Sentinel-1 SAR data across three maritime corridors in real time.',
     date: 'March 2026', tag: 'Operations',
     image: '/assets/images/earth-surface.jpg',
-    href: '/marketing/news/maritime-dark-vessel-detection', external: false,
+    href: '/news/maritime-dark-vessel-detection', external: false,
   },
   {
     id: 'n03', type: 'news',
@@ -43,7 +43,7 @@ export const newsroomItems: NewsroomItem[] = [
     summary: 'Following extensive testing across the 2025 fire season, our Meteosat-based wildfire detection engine now delivers actionable alerts in under 60 seconds from ignition detection.',
     date: 'February 2026', tag: 'Technology',
     image: '/assets/images/earth-surface-2.jpg',
-    href: '/marketing/news/wildfire-detection-under-60-seconds', external: false,
+    href: '/news/wildfire-detection-under-60-seconds', external: false,
   },
 
   // ── BLOG ───────────────────────────────────────────────────
@@ -53,7 +53,7 @@ export const newsroomItems: NewsroomItem[] = [
     summary: 'Detection classifies pixels. Reasoning explains what they mean. This post explores the cognitive gap between conventional EO pipelines and true planetary intelligence systems.',
     date: 'April 2026', tag: 'Insight',
     image: '/assets/images/spacecraft.jpg',
-    href: '/marketing/news/cognitive-planetary-intelligence', external: false,
+    href: '/news/cognitive-planetary-intelligence', external: false,
   },
   {
     id: 'b02', type: 'blog',
@@ -61,7 +61,7 @@ export const newsroomItems: NewsroomItem[] = [
     summary: 'Eight billion euros of European infrastructure, freely available under EU treaty law. We explain why this is the most underused competitive advantage in European technology.',
     date: 'March 2026', tag: 'Opinion',
     image: '/assets/images/dish-blue.jpg',
-    href: '/marketing/news/copernicus-data-sovereign-foundation', external: false,
+    href: '/news/copernicus-data-sovereign-foundation', external: false,
   },
   {
     id: 'b03', type: 'blog',
@@ -69,7 +69,7 @@ export const newsroomItems: NewsroomItem[] = [
     summary: 'Compliance built from the first commit is a different product from compliance bolted on at the end. Here is what designing for EU AI Act conformity looks like in practice.',
     date: 'January 2026', tag: 'Engineering',
     image: '/assets/images/dish-sunset.jpg',
-    href: '/marketing/news/eu-ai-act-satellite-intelligence', external: false,
+    href: '/news/eu-ai-act-satellite-intelligence', external: false,
   },
 
   // ── MEDIA / PRESS ───────────────────────────────────────────

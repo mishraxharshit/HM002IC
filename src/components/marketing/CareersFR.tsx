@@ -27,7 +27,7 @@ export function CareersFR() {
         <LazyVideo src="/assets/videos/fabrication.mp4" poster="/assets/images/technicien.jpg" />
         <div><h1>Rendre l'impossible possible.</h1>
         <p>Chez Fractalysium, vous prenez vos responsabilités tôt, vous avancez vite et vous résolvez des problèmes difficiles aux côtés d'experts qui se soucient de l'impact. Nous valorisons la curiosité, la rigueur et le courage de remettre en question l'habitude.</p>
-        <Link href="/marketing/contact" className="cr-b">Postuler</Link></div>
+        <Link href="/contact" className="cr-b">Postuler</Link></div>
       </header>
       <section className="cr-s"><h2>Pourquoi nous rejoindre</h2>
         <div className="cr-g">{raisons.map(([t, d]) => <div key={t}><h3>{t}</h3><p>{d}</p></div>)}</div></section>
@@ -37,7 +37,7 @@ export function CareersFR() {
         <ol className="cr-o">{etapes.map((e, i) => <li key={i}><b>{i + 1}</b><span>{e}</span></li>)}</ol></section>
       <section className="cr-s cr-grey"><h2>Candidature spontanée</h2>
         <p className="cr-p">Aucun poste ne correspond à votre profil ? Écrivez-nous quand même : nous lisons chaque candidature.</p>
-        <Link href="/marketing/contact" className="cr-b">Nous écrire</Link></section>
+        <Link href="/contact" className="cr-b">Nous écrire</Link></section>
       <CTASection />
       <Footer />
       <style dangerouslySetInnerHTML={{ __html: `

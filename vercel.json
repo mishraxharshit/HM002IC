@@ -54,5 +54,17 @@
         }
       ]
     }
+  ],
+  "redirects": [
+    {
+      "source": "/marketing",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/marketing/:path*",
+      "destination": "/:path*",
+      "permanent": true
+    }
   ]
 }

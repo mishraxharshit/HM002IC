@@ -5,12 +5,12 @@ import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 
 const LINKS = [
-  { label: 'Défense',     href: '/marketing/defense'      },
-  { label: 'Capacités',   href: '/marketing/capabilities' },
-  { label: 'Technologie', href: '/marketing/technology'   },
-  { label: 'Plateforme',  href: '/marketing/platform'     },
-  { label: 'Recherche',   href: '/marketing/news'         },
-  { label: 'Actualités',  href: '/marketing/newsroom'     },
+  { label: 'Défense',     href: '/defense'      },
+  { label: 'Capacités',   href: '/capabilities' },
+  { label: 'Technologie', href: '/technology'   },
+  { label: 'Plateforme',  href: '/platform'     },
+  { label: 'Recherche',   href: '/news'         },
+  { label: 'Actualités',  href: '/newsroom'     },
 ];
 
 export function Navigation() {
@@ -105,7 +105,7 @@ export function Navigation() {
           {/* Right side */}
           <div className="nav-right">
             <Link
-              href="/marketing/contact"
+              href="/contact"
               className={['nav-cta', isDark ? 'nav-cta--light' : ''].join(' ')}
             >
               <span>Request Access</span>
@@ -197,7 +197,7 @@ export function Navigation() {
         {/* Footer */}
         <div className="drawer-foot">
           <Link
-            href="/marketing/contact"
+            href="/contact"
             className="drawer-cta"
             onClick={() => setOpen(false)}
             tabIndex={open ? 0 : -1}

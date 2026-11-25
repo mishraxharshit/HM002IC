@@ -1,4 +1,4 @@
-// Actualités — chaque entrée a sa propre page (/marketing/newsroom/[slug]).
+// Actualités — chaque entrée a sa propre page (/newsroom/[slug]).
 // Pour en ajouter : copiez une entrée. Vérifiez chaque affirmation avant publication.
 export type Type = 'news' | 'blog' | 'presse' | 'photo' | 'video';
 export type Actu = { slug: string; type: Type; tag: string; titre: string; resume: string; date: string; image: string; source?: string; duree?: string; lien?: string; corps: string[] };
@@ -22,13 +22,13 @@ export const actus: Actu[] = [
     resume: 'Après des tests étendus durant la saison des feux 2025, notre moteur fondé sur Meteosat délivre des alertes exploitables en moins de 60 secondes après la détection d\'un départ de feu.',
     corps: ['Après des tests étendus pendant la saison des feux 2025, le moteur de détection d\'incendies de Fractalysium, fondé sur les données Meteosat, délivre des alertes exploitables en moins de 60 secondes après la détection d\'un départ de feu.', '## Ce que mesure ce délai', 'Il court du moment où le signal thermique est détecté jusqu\'à l\'envoi d\'une alerte comprenant la position et un niveau de confiance.', '## Fiabilité avant tout', 'Chaque signal est comparé à la normale locale pour limiter les fausses alertes. L\'opérateur voit toujours ce que le système sait et ce qu\'il ignore.'] },
 
-  { slug: 'raisonnement-causal', type: 'blog', tag: 'Analyse', date: 'Avril 2026', image: 'spacecraft.jpg', lien: '/marketing/news/au-dela-de-la-detection',
+  { slug: 'raisonnement-causal', type: 'blog', tag: 'Analyse', date: 'Avril 2026', image: 'spacecraft.jpg', lien: '/news/au-dela-de-la-detection',
     titre: 'Pourquoi le raisonnement causal est la couche manquante de l\'IA d\'observation de la Terre',
     resume: 'La détection classe des pixels. Le raisonnement explique ce qu\'ils signifient.', corps: [] },
-  { slug: 'avantage-copernicus', type: 'blog', tag: 'Opinion', date: 'Mars 2026', image: 'dish-blue.jpg', lien: '/marketing/news/donnees-ouvertes-copernicus',
+  { slug: 'avantage-copernicus', type: 'blog', tag: 'Opinion', date: 'Mars 2026', image: 'dish-blue.jpg', lien: '/news/donnees-ouvertes-copernicus',
     titre: 'L\'avantage Copernicus : pourquoi les données satellitaires ouvertes changent tout',
     resume: 'Une infrastructure européenne librement accessible : pourquoi c\'est un atout sous-utilisé.', corps: [] },
-  { slug: 'concevoir-pour-le-reglement-ia', type: 'blog', tag: 'Ingénierie', date: 'Janvier 2026', image: 'dish-sunset.jpg', lien: '/marketing/news/concevoir-pour-le-reglement-europeen-sur-lia',
+  { slug: 'concevoir-pour-le-reglement-ia', type: 'blog', tag: 'Ingénierie', date: 'Janvier 2026', image: 'dish-sunset.jpg', lien: '/news/concevoir-pour-le-reglement-europeen-sur-lia',
     titre: 'Concevoir pour le règlement européen sur l\'IA dès le premier jour',
     resume: 'Une conformité pensée dès le départ n\'est pas le même produit qu\'une conformité ajoutée à la fin.', corps: [] },
 

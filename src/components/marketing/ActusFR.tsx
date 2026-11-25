@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { Navigation } from './Navigation';
 import { Footer } from './SiteFooter';
 
-const hrefs: Record<string, string> = {"Communiqué": "/marketing/contact", "Opérations": "/marketing/contact", "Presse": "/marketing/contact", "Entretien": "/marketing/contact", "Technologie": "/marketing/news/detecter-un-depart-de-feu", "Analyse": "/marketing/news/au-dela-de-la-detection", "Politique": "/marketing/news/donnees-ouvertes-copernicus", "Ingénierie": "/marketing/news/concevoir-pour-le-reglement-europeen-sur-lia", "Collaboration": "/marketing/news/radar-a-synthese-douverture", "Science": "/marketing/news/detecter-un-depart-de-feu"};
+const hrefs: Record<string, string> = {"Communiqué": "/contact", "Opérations": "/contact", "Presse": "/contact", "Entretien": "/contact", "Technologie": "/news/detecter-un-depart-de-feu", "Analyse": "/news/au-dela-de-la-detection", "Politique": "/news/donnees-ouvertes-copernicus", "Ingénierie": "/news/concevoir-pour-le-reglement-europeen-sur-lia", "Collaboration": "/news/radar-a-synthese-douverture", "Science": "/news/detecter-un-depart-de-feu"};
 const items = [
   ['Communiqué', 'Fractalysium achève l\'évaluation de conformité de son système à haut risque au titre du règlement européen sur l\'IA', 'Avril 2026'],
   ['Opérations', 'Le suivi maritime de Fractalysium entre en phase d\'essai opérationnel', 'Mars 2026'],
@@ -26,7 +26,7 @@ export function ActusFR({ titre }: { titre: string }) {
         <h1>{titre}</h1>
         <div className="ac__l">
           {items.map(([c, t, d]) => (
-            <Link key={t} href={hrefs[c] || "/marketing/news"} className="ac__i">
+            <Link key={t} href={hrefs[c] || "/news"} className="ac__i">
               <span>{c} • {d}</span><h2>{t}</h2>
             </Link>
           ))}

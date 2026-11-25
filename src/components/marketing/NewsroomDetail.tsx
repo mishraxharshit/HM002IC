@@ -12,7 +12,7 @@ export function NewsroomDetail({ a }: { a: Actu }) {
       <Navigation />
       <header className="nd-h" style={{ backgroundImage: `url(/assets/images/${a.image})` }}>
         <div>
-          <Link href="/marketing/newsroom" className="nd-back">Actualités</Link>
+          <Link href="/newsroom" className="nd-back">Actualités</Link>
           <span>{a.tag} • {a.date}{a.duree ? ` • ${a.duree}` : ''}</span>
           <h1>{a.titre}</h1>
         </div>
@@ -21,12 +21,12 @@ export function NewsroomDetail({ a }: { a: Actu }) {
         <p className="nd-lead">{a.resume}</p>
         {a.source && <p className="nd-src">Source : {a.source}</p>}
         {a.corps.map((p, i) => p.startsWith('## ') ? <h2 key={i}>{p.slice(3)}</h2> : <p key={i}>{p}</p>)}
-        <p className="nd-ct">Contact presse et institutions : <Link href="/marketing/contact">nous écrire</Link></p>
+        <p className="nd-ct">Contact presse et institutions : <Link href="/contact">nous écrire</Link></p>
       </article>
       <section className="nd-m">
         <h2>À lire aussi</h2>
-        {autres.map((x) => <Link key={x.slug} href={x.lien || `/marketing/newsroom/${x.slug}`}><span>{x.tag} • {x.date}</span><h3>{x.titre}</h3></Link>)}
-        <Link href="/marketing/newsroom" className="nd-all">Toutes les actualités</Link>
+        {autres.map((x) => <Link key={x.slug} href={x.lien || `/newsroom/${x.slug}`}><span>{x.tag} • {x.date}</span><h3>{x.titre}</h3></Link>)}
+        <Link href="/newsroom" className="nd-all">Toutes les actualités</Link>
       </section>
       <CTASection />
       <Footer />
